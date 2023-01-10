@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/public/css/main.css">
+    <script src="./public/js/socios-info.js"></script>
+    <script src="./public/js/modalScript.js"></script>
+
+    <link rel="shortcut icon" href="./public/images/identidade/MARCA_TAURA_white_Prancheta 1.png" type="image/x-icon">
+    <title>Taura Energia Solar</title>
+</head>
+<body>
+    <div class="mainSection">
+        <nav class="myNav navbar is-transparent">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="#">
+                <img src="./public/images/identidade/MARCA_TAURA_black_Prancheta 1.png"  width="50" style="max-height:2.75rem;">
+              </a>
+              <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          
+            <div id="" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item" href="#mainSection">
+                  Inicio
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link" href="#servicosSectionID">
+                    Nossos Serviços
+                  </a>
+                  <div class="navbar-dropdown is-boxed">
+                    <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+                      Energia Solar
+                    </a>
+                    <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/">
+                        Instalações Elétricas
+                    </a>
+                    <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                        Eficiência Energética
+                    </a>
+                    <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+                        Tecnologias
+                    </a>
+                    <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+                        Micro
+                    </a><!-- 
+                    <hr class="navbar-divider"> -->
+                    <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+                        String
+                    </a>
+                    <a class="navbar-item" href="https://bulma.io/documentation/components/breadcrumb/">
+                        Micro x String
+                    </a>
+                    <!-- <div class="dropdown">
+                        <a href="#" class="navbar-link">Módulos Fotovoltaicos</a>
+                        <div class="navbar-dropdown is-right">
+                          <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+                            Monocristalino
+                          </a>
+                          <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/">
+                              Policristalino
+                          </a>
+                          <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                              Half-Cell
+                          </a>
+                        </div>
+                    </div> -->
+                    <a class="navbar-item" href="https://bulma.io/documentation/components/breadcrumb/">
+                        A Energia que move o mundo
+                    </a>
+                    <a class="navbar-item" href="https://bulma.io/documentation/components/breadcrumb/">
+                        A Sociedade e a Energia Elétrica 
+                    </a>
+                    <a class="navbar-item" href="https://bulma.io/documentation/components/breadcrumb/">
+                        A Necessidade de Energia Elétrica
+                    </a>
+                  </div>
+                </div>
+                <a class="navbar-item" href="./aprenda.html">
+                    Aprenda sobre Energia
+                  </a>
+                <a class="navbar-item" href="#sectionSocios">
+                    Sobre nós
+                  </a>
+                <a class="navbar-item" href="#">
+                    Nosso Ideal
+                  </a>
+              </div>
+          
+              <div class="navbar-end">
+                <div class="navbar-item mr-6">
+                  <div class="field is-grouped">
+                    <p class="control">
+                      <a href="#" class="button is-primary js-modal-trigger" data-target="modal-contato" id="nav-Contato" >
+                        <span class="icon">
+                          <i class="fas fa-phone"></i>
+                        </span>
+                        <span>Contato</span>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div class="mainSectionCover">
+            <div class="textImgSection">
+              <div class="title-txtimg title " >Boas vindas à Taura</div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, molestias excepturi. Eveniet quidem molestiae vitae. Velit vel aliquam, voluptates, ad perferendis provident deleniti dignissimos veniam culpa possimus fugiat tenetur facere.</p>
+            </div>
+            <div class="logoImage">
+              <img id="logoTaura" src="./public/images/identidade/MARCA_TAURA_white_Prancheta 1.png" alt="">
+            </div>
+          </div>          
+    </div>
+    <div class="servicosSection" id="servicosSectionID">
+      <div class="title" style="margin-bottom: 5rem; text-align: center; font-size: 4rem;">Nossos Serviços</div>
+      <div class="columns is-multiline is-flex">
+        <!-- Inicio padrão -->
+        <div class="column is-two-thirds"> 
+          <div class="title">Lorem, ipsum dolor.</div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem mollitia totam temporibus harum eius commodi nisi fugiat ea dolor nesciunt animi, ipsam deserunt cum nostrum aliquam voluptatibus neque culpa veritatis.</p>
+        </div>
+        <div class="column is-one-third">
+          <img src="./public/images/identidade/20166754-a202-4216-8d41-f9495bc4a380.jpg" alt="">
+        </div>
+        <div class="column is-one-third">
+          <img src="./public/images/identidade/2d655549-3e46-4110-af5e-eee6c91a179a.jpg" alt="">
+        </div>
+        <div class="column is-two-thirds"><div class="title">Lorem, ipsum dolor.</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem mollitia totam temporibus harum eius commodi nisi fugiat ea dolor nesciunt animi, ipsam deserunt cum nostrum aliquam voluptatibus neque culpa veritatis.</p></div>
+        <!-- Fim Padrão  -->
+        <div class="column is-two-thirds"><div class="title">Lorem, ipsum dolor.</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem mollitia totam temporibus harum eius commodi nisi fugiat ea dolor nesciunt animi, ipsam deserunt cum nostrum aliquam voluptatibus neque culpa veritatis.</p></div>
+        <div class="column is-one-third">
+          <img src="./public/images/identidade/b87dd62e-ae3b-4954-864b-d1102a35cee0.jpg" alt="">
+        </div>
+        <div class="column is-one-third">
+          <img src="./public/images/identidade/216b993d-6b03-4a64-b10e-73f3c9fee974.jpg" alt="">
+        </div>
+        <div class="column is-two-thirds"><div class="title">Lorem, ipsum dolor.</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem mollitia totam temporibus harum eius commodi nisi fugiat ea dolor nesciunt animi, ipsam deserunt cum nostrum aliquam voluptatibus neque culpa veritatis.</p></div>
+
+      </div>
+    </div>
+    <div class="socios mt-6" id="sectionSocios">
+      <div class="title" style="text-align: center; font-size: 4rem;">
+        As mentes por trás da <br> Taura Energia
+      </div>
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+              <article class="tile is-child box">
+
+                <div class="card card-wrap">
+                    <div class="card-image">
+                      <figure class="image">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        
+                        <div class="media-content">
+                          <p class="title is-4"></p>
+                          <p class="subtitle is-6"></p>
+                        </div>
+                      </div>
+                  
+                      <div class="content">
+                      </div>
+                    </div>
+                    <footer class="card-footer">
+                      <div class="box midea-box" >
+                        <p class="buttons is-flex is-flex-direction-row is-flex-wrap-nowrap">
+                   
+                            <button class="button is-fullwidth is-large instaContato">
+                              <span class="icon">
+                                <i class="fa-brands fa-instagram"></i>
+                              </span>
+                            </button>
+                 
+                          
+                            <button class="button is-fullwidth is-large facebookContato">
+                              <span class="icon">
+                                <i class="fa-brands fa-facebook"></i>
+                              </span>
+                            </button>
+                          
+                          
+                            <button class="button is-fullwidth is-large linkedinContato">
+                              <span class="icon">
+                                <i class="fa-brands fa-linkedin"></i>
+                              </span>
+                            </button>
+                          
+                          
+                            <button class="button is-fullwidth is-large wppContato">
+                              <span class="icon">
+                                <i class="fa-brands fa-whatsapp"></i>
+                              </span>
+                            </button>
+                          
+                        </p>
+                      </div>
+                    </footer>
+                  </div>
+
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child box">
+
+                <div class="card card-wrap">
+                    <div class="card-image">
+                      <figure class="image">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        
+                        <div class="media-content">
+                          <p class="title is-4"></p>
+                          <p class="subtitle is-6"></p>
+                        </div>
+                      </div>
+                  
+                      <div class="content">
+                      </div>
+                    </div>
+                    <footer class="card-footer">
+                      <div class="box midea-box">
+                        <p class="buttons is-flex is-flex-direction-row is-flex-wrap-nowrap">
+                   
+                            <button class="button is-fullwidth is-large instaContato">
+                              <span class="icon">
+                                <i class="fa-brands fa-instagram"></i>
+                              </span>
+                            </button>
+                 
+                          
+                            <button class="button is-fullwidth is-large facebookContato">
+                              <span class="icon">
+                                <i class="fa-brands fa-facebook"></i>
+                              </span>
+                            </button>
+                          
+                          
+                            <button class="button is-fullwidth is-large linkedinContato">
+                              <span class="icon">
+                                <i class="fa-brands fa-linkedin"></i>
+                              </span>
+                            </button>
+                          
+                          
+                            <button class="button is-fullwidth is-large wppContato">
+                              <span class="icon">
+                                <i class="fa-brands fa-whatsapp"></i>
+                              </span>
+                            </button>
+                          
+                        </p>
+                      </div>
+                    </footer>
+                  </div>
+
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child box">
+                <div class="card card-wrap">
+                    <div class="card-image">
+                      <figure class="image">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        
+                        <div class="media-content">
+                          <p class="title is-4"></p>
+                          <p class="subtitle is-6"></p>
+                        </div>
+                      </div>
+                  
+                      <div class="content">
+                      </div>
+                    </div>
+                    <footer class="card-footer">
+                      <div class="box midea-box">
+                        <p class="buttons is-flex is-flex-direction-row is-flex-wrap-nowrap">
+                   
+                            <button class="button is-fullwidth is-large instaContato">
+                              <span class="icon">
+                                <i class="fa-brands fa-instagram"></i>
+                              </span>
+                            </button>
+                 
+                          
+                            <button class="button is-fullwidth is-large facebookContato">
+                              <span class="icon">
+                                <i class="fa-brands fa-facebook"></i>
+                              </span>
+                            </button>
+                          
+                          
+                            <button class="button is-fullwidth is-large linkedinContato">
+                              <span class="icon">
+                                <i class="fa-brands fa-linkedin"></i>
+                              </span>
+                            </button>
+                          
+                          
+                            <button class="button is-fullwidth is-large wppContato">
+                              <span class="icon">
+                                <i class="fa-brands fa-whatsapp"></i>
+                              </span>
+                            </button>
+                          
+                        </p>
+                      </div>
+                    </footer>
+                  </div>
+              </article>
+            </div>
+          </div>
+             
+    </div>
+
+    
+    <div id="modal-contato" class="modal">
+      <div class="modal-background"></div>
+    
+      <div class="modal-content">
+        <div class="box ">
+          <p class="buttons is-flex is-flex-direction-row is-flex-wrap-nowrap">
+     
+              <button class="button is-fullwidth is-large instaContato">
+                <span class="icon">
+                  <i class="fa-brands fa-instagram"></i>
+                </span>
+              </button>
+   
+            
+              <button class="button is-fullwidth is-large facebookContato">
+                <span class="icon">
+                  <i class="fa-brands fa-facebook"></i>
+                </span>
+              </button>
+            
+            
+              <button class="button is-fullwidth is-large linkedinContato">
+                <span class="icon">
+                  <i class="fa-brands fa-linkedin"></i>
+                </span>
+              </button>
+            
+            
+              <button class="button is-fullwidth is-large wppContato">
+                <span class="icon">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </span>
+              </button>
+            
+          </p>
+        </div>
+      </div>
+    
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Taura Energia&copy;, </strong> Website desenvolvido por <a href="https://matheusmarques.online" target="_blank">Matheus Marques</a>.
+          </p>
+        </div>
+      </footer>
+</body>
+</html>
+
+
