@@ -1,7 +1,9 @@
 html{
 
     scroll-behavior:smooth ;
-
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 .mainSection{
     
@@ -154,6 +156,23 @@ html{
     
 }
 
+.servicosInnerRow{
+
+    display: flex;
+    margin-bottom: 100px;
+    margin-right: 25px;
+    margin-left: 25px;
+
+}
+
+.servicosImg{
+
+    display: inline-block;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
 .servicosSection{
 
     margin-top: 2rem;
@@ -175,8 +194,7 @@ html{
 
 .servicosSection img{
 
-    max-height: 30rem;
-
+    max-width: 250px;
 }
 
 .servicosSection .column .title{
@@ -204,5 +222,155 @@ html{
     margin-bottom: auto;
 
 }
+
+/* Mobile def */
+
+@media only screen and (max-width: 600px) {
+
+    .mainSection{
+    
+        
+        background-image: url("../images/identidade/216b993d-6b03-4a64-b10e-73f3c9fee974.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    
+    .mainSectionCover{
+    
+        position:absolute;
+        background-color: rgba(0, 0, 0, 0.1);
+        padding-top: 8rem;
+    
+    }
+    
+    .textImgSection{
+
+        text-align: justify;
+        text-justify: distribute-all-lines;
+        text-align: center;
+        position: absolute;
+        margin-left: 0;
+        width: 100%;
+        color: aliceblue;
+        margin-top: 20rem;
+        font-size: 1rem;
+        font-weight: 500;
+        opacity: 0;
+        animation: 2s ease 6s 1 fadeInText;
+        animation-fill-mode: forwards;
+    }
+
+    .title-txtimg{
+
+        color: aliceblue;
+        font-size: 1.5rem;
+    }
+    
+    @keyframes fadeInText {
+        0%{
+    
+            opacity: 0;
+    
+        }
+        100%{
+    
+            opacity: 1;
+    
+        }
+    }
+    
+    .logoImage{
+    
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    #logoTaura{
+    
+       /* animation: 5s ease 0s 1 smoothLogo;
+     */
+    
+        width: 300px;
+        height: 300px;
+        opacity: 0.6;
+        transform: translateY(-50%);
+        animation: 5s ease 0s 1 smoothLogoShow, 2s ease 5s 1 smoothLogoSlideUp;
+        
+    
+    }
+    
+    @keyframes smoothLogoShow {
+        
+        0% {
+    
+           transform: translateY(0%);
+           opacity: 0;
+           width: 400px;
+           height: 400px;
+    
+        }
+    
+        100% {
+    
+            transform: translateY(0%);
+            opacity: 0.6;
+            width: 300px;
+            height: 300px;
+        }
+    
+    
+    }
+    
+    @keyframes smoothLogoSlideUp {
+    
+        0%{
+            transform: translateY(0%);
+        }
+        100%{
+    
+            transform: translateY(-50%);
+    
+        }
+        
+    }
+
+    .servicosImg{
+
+
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+        margin-top: 50px ;
+        padding: 0;
+
+    }
+
+    .servicosSection img{
+
+        max-height: 15rem;
+    
+    }
+
+    .servicosTexto{
+
+        text-align: justify;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-weight: 500;
+        text-justify: distribute;
+
+    }
+
+    .servicosInnerRow{
+
+        display: block;
+
+    }
+  }
 
 
