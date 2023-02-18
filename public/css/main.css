@@ -203,6 +203,23 @@ html{
 
 }
 
+.quem-somos-content{
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 0 20px 0 20px;
+
+}
+
+.quem-somos-texto{
+
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: auto 150px auto 150px;
+    text-justify:auto;
+
+}
+
 .midea-box{
 
 
@@ -371,6 +388,34 @@ html{
         display: block;
 
     }
+    
+    .quem-somos-texto{
+        
+        grid-area:quem-somos-texto ;
+        font-size: 1.2rem;
+        text-align: justify;
+        margin: 20px 50px auto 50px;
+        text-justify:auto;
+    
+    }
+
+    .img-quem-somos{
+
+        grid-area: img-quem-somos;
+
+    }
+
+    .quem-somos-content{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "img-quem-somos "
+                            "quem-somos-texto "
+                            "quem-somos-texto";
+        margin: 0 5px 0 5px;
+    
+    }
+
   }
 
-
+/* Mobile def */

@@ -21,26 +21,35 @@ $(document).ready(function() {
         const rows = json.table.rows;
         console.log(rows);
 
-        var carouselAprenda = document.getElementById('carousel-aprenda');
+        var carouselAprenda = document.getElementById('swiper-wrapper-aprenda');
         carouselAprenda.innerHTML = "";
 
         rows.forEach(row => {
             
-            carouselAprenda.innerHTML = carouselAprenda.innerHTML + `<div class="item">
-            <div class="card">
-                <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="${row.c[6].v}" alt="Placeholder image">
-                  </figure>
-                </div>
-                <div class="card-content">                      
-                  <div class="content">${row.c[4].v}
-                    <br>
-                    <time >${row.c[5].v}</time>
-                  </div>
-                </div>
-              </div>
-        </div>`
+            carouselAprenda.innerHTML = carouselAprenda.innerHTML + `        
+        <div class="swiper-slide">
+                      <div class="card">
+                        <div class="card-image">
+                          <figure class="image is-4by3">
+                            <img src="${row.c[6].v}" alt="Placeholder image">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <div class="media">
+                            <div class="media-content">
+                              <p class="title is-4">Titulo da Notícia</p>
+                            </div>
+                          </div>
+                      
+                          <div class="content">${row.c[4].v}
+                            <br>
+                            <time datetime="2016-1-1">${row.c[5].v}</time>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        
+        `
 
 
         });
